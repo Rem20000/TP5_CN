@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <math.h>
+#include<cblas.h>
+#include<lapack.h>
 
 void Jacobi(double A[][10], double b[], double X[], int n) {
     double r = 0, s = 0, eps = 1e-15;              // r est le residus pour savoir l'itération "stop"
